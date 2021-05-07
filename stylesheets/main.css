@@ -21,7 +21,7 @@ body{
   color: white; /* The black stands out from the grey background footer */
   padding: 10px; /* The padding creats space betwwen text. There is 10px between text so it is easier to read. */
 }
-.header{
+.header{ /* This is to control placement of headings and subheading with size, font and central. */
   text-transform: uppercase;
   font-size: 2em;
   font-family: 'Courier New', monospace;
@@ -70,13 +70,13 @@ the computer mouse over the tabs .*/
   background-color: #F4F4F4;
   color: black;
 }
-.slideshow-images{
+.slideshow-images{ /*This controls the size of the slideshow. */
   max-height: 500px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 4px;
 }
-.gallery-row {
+.gallery-row { /* This groups the photos and puts them in order of three cross and four images down. */
   display: -ms-flexbox; /* IE 10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE 10 */
@@ -92,7 +92,7 @@ the computer mouse over the tabs .*/
   flex: 33%;
   padding: 0 4px;
 }
-.gallery-column img {
+.gallery-column img { /* This is to resize a single imagie because the image was too big. */
   margin-top: 8px;
   vertical-align: middle;
 }

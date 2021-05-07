@@ -8,9 +8,9 @@
 </head>
 <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 
-<body> 	<!-- The body is what would be in the website. -->
+<body> 	<!-- The body is what would be included in the website. -->
 
-<div class="center header"><span class="header-left">Francesca</span> Walters</div>
+<div class="center header"><span class="header-left">Francesca</span> Walters</div> <!--The div controls the size, font and placement of heading and subheading of website-->
 <div class="center sub-header">Professional Photographer</div>
 
 <ul>
@@ -18,9 +18,8 @@
 	<li><a href="about.html">About</a></li>
   <li><a class="selected-tab" href="inspiration.html">Inspiration</a></li>
 </ul>
-<!-- "ul" tag is to tell the website to start at home page first and link to cast page. -->
-
-<div class="slideshow-images">
+<!-- "ul" tag is link the three tabs together and the user can select to different tabs on website. This class is selected to inspiration tag on this page.-->
+<div class="slideshow-images"> <!--List of images of max Rive photography on slideshow-->
   <img class="mySlides slideshow-images" src="img/Max Rive.jpg">
   <img class="mySlides slideshow-images" src="img/Max Rive 2.jpg">
   <img class="mySlides slideshow-images" src="img/Max Rive 3.jpg">
@@ -28,23 +27,22 @@
 </div>
 
 <script>
-var myIndex = 0;
+var myIndex = 0; // This is telling the slideshow to start at number zero.
 carousel();
 
 console.log("Hello")
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("mySlides");// Hides all slideshow images
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
+  myIndex++; // Get next image
+  if (myIndex > x.length) {myIndex = 1} // Go back to first slideshow image
   x[myIndex-1].style.display = "block";
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
-
 <p> Max Rive is a professional photographer born in Netherlands. Max passion for
 mountains and landscapes began when he would visit high mountains of Switzerland
 at the age of 5. Max planed a last-minute hike trip is Switzerland and ended up
